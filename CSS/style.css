@@ -57,6 +57,7 @@ h3 {
     padding: 1rem;
 }
 .nav-option a {
+    position: relative;
     text-align: center;
     font-size: 1.4rem;
     text-decoration: none;
