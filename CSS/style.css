@@ -123,17 +123,17 @@ h3 {
 }
 .nav-phone {
     position: fixed;
-    visibility: hidden;
+    /* visibility: hidden; */
+    clip-path: circle(10px at 100% -10%);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.85);
-    transform: scale(0);
-    transition: all 500ms ease;
+    /* transform: scale(0); */
+    transition: all 1s ease-in-out;
     overflow: hidden;
 }
 .nav-phone a {
@@ -150,11 +150,9 @@ h3 {
     flex-direction: column;
 }
 .phone {
-    visibility: visible;
-    margin-top: -.5rem;
-    border-radius: 0;
-    transform: scale(1);
-    transition: all 500ms ease;
+    /* visibility: visible; */
+    clip-path: circle(1000px at 100% -10%);
+    transition: all 1s ease-in-out;
 }
 .icon {
     position: fixed;
