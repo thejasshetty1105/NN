@@ -42,6 +42,7 @@ h3 {
     transition: 300ms ease;
 }
 .nav-logo {
+    cursor: pointer;
     margin-left: 1rem;
     padding: .2rem 0;
     height: 11vh;
@@ -53,10 +54,10 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin: 0 0.8rem 0 .5rem; */
     padding: 1rem;
 }
 .nav-option a {
+    cursor: pointer;
     position: relative;
     text-align: center;
     font-size: 1.4rem;
@@ -336,12 +337,6 @@ h3 {
     transition: all 500ms ease;
 }
 @media screen and (min-width: 768px) {
-    .projects .center {
-        position: relative;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%);
-    }
     .images {
         grid-template-columns: 1fr 1fr;
     }
