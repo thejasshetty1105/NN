@@ -121,7 +121,6 @@ h3 {
 }
 .nav-phone {
     position: fixed;
-    /* visibility: hidden; */
     clip-path: circle(10px at 100% -10%);
     display: flex;
     align-items: center;
@@ -130,8 +129,7 @@ h3 {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.85);
-    /* transform: scale(0); */
-    transition: all 1s ease-in-out;
+    transition: all 700ms ease-in-out;
     overflow: hidden;
 }
 .nav-phone a {
@@ -148,9 +146,8 @@ h3 {
     flex-direction: column;
 }
 .phone {
-    /* visibility: visible; */
-    clip-path: circle(1000px at 100% -10%);
-    transition: all 1s ease-in-out;
+    clip-path: circle(1500px at 100% -10%);
+    transition: all 700ms ease-in;
 }
 .icon {
     position: fixed;
@@ -166,6 +163,7 @@ h3 {
     }
     .nav-logo {
         height: 3.3rem;
+        z-index: 2;
     }
     .nav-span {
         display: block;
@@ -303,6 +301,7 @@ h3 {
     position: relative;
     overflow: hidden;
     transition: all .5s ease;
+    border: double 5px rgb(236,183,49);
 }
 .img-container img {
     width: 100%;
@@ -329,7 +328,6 @@ h3 {
 }
 .overlay:hover {
     transition: all 500ms ease;
-    transform: scale(1.1);
     opacity: 1;
 }
 .img-container:hover img {
@@ -338,10 +336,13 @@ h3 {
 }
 @media screen and (min-width: 768px) {
     .images {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .overlay {
         opacity: 0;
+    }
+    .img-container:hover {
+        box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
     }
 }
 /* Mission & Vission */
@@ -557,4 +558,5 @@ ul{
 }
 .txt-cent {
     text-align: center;
+    padding: 0 0 1rem 0;
 }

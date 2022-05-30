@@ -1,4 +1,4 @@
-
+//navbar phone version and hamburger menu
 function nav() {
     var span = document.querySelector(".nav-span");
     var phone = document.querySelector(".nav-phone");
@@ -12,6 +12,7 @@ function nav() {
         document.querySelector("body").style.overflow = "hidden";
     }
 }
+//navbar color change on scroll
 window.addEventListener("scroll",function() {
     var nav = document.querySelector(".navbar");
     var span = document.querySelector(".nav-span");
