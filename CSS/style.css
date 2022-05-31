@@ -70,7 +70,7 @@ h3 {
     left: 0;
     bottom: 0;
     border-radius: 50px;
-    background-color: pink;
+    background-color: rgb(236,183,49);
     height: 3px;
     width: 0;
 }
@@ -202,11 +202,8 @@ h3 {
     text-align: center;
 }
 .serv-text {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     text-align: center;
-    z-index: 1;
+    margin-bottom: -.5rem;
 }
 .services {
     padding: 1rem 0;
@@ -219,30 +216,36 @@ h3 {
     align-items: center;
 }
 .serv-box {
-    position: relative;
-    width: 75vw;
-    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    padding: .5rem;
+    /* width: 75vw;
+    height: 30vh; */
 }
-.serv-img {
-    position: absolute;
+.serv-box img {
     width: 100%;
-    height: 100%;
     border-radius: 50%;
-    overflow: hidden;
+    padding: .2rem;
+    border: solid .1rem rgb(0,0,0,.8);
 }
 @media screen and (min-width: 768px) {
     .services {
-        height: 50vh;
+        height: 100%;
     }
     .serv {
-        top: 30%;
-        transform: translateY(-50%);
+        /* top: 30%;
+        transform: translateY(-50%); */
         flex-direction: row;
+        width: 100%;
+        height: 100%;
     }
-    .serv-box {
+    /* .serv-box {
         width: 15vw;
         height: 25vh;
-    }
+    } */
 }
 /* Footer */
 .footer {
@@ -298,6 +301,7 @@ h3 {
     grid-gap: 1rem;
 }
 .img-container{
+    cursor: pointer;
     position: relative;
     overflow: hidden;
     transition: all .5s ease;
