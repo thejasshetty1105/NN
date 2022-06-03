@@ -27,7 +27,7 @@ h3 {
 }
 @media screen and (min-width: 768px) {
     body{
-        background-image: url(/Assets/bg.jpg) no-repeat;
+        background-image: url(/Assets/bg-min.jpg) no-repeat;
     }
 }
 /* Navbar Section */
