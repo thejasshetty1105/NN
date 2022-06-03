@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
     /* font-family: 'Times New Roman', Times, serif; */
-    font-family: 'Lateef', cursive;
+    /* font-family: 'Lateef', cursive; */
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     color: rgb(236,183,49);
 }
 body{
-    background: url(/Assets/bg.jpg) no-repeat;
-    background-position: cover;
+    background: url(/Assets/mbg.jpg) no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
 }
 a {
@@ -23,6 +24,11 @@ h2 {
 }
 h3 {
     font-size: 1.7rem;
+}
+@media screen and (min-width: 768px) {
+    body{
+        background-image: url(/Assets/bg.jpg) no-repeat;
+    }
 }
 /* Navbar Section */
 .navbar {
@@ -573,4 +579,12 @@ ul{
 .txt-cent {
     text-align: center;
     padding: 0 0 1rem 0;
+}
+/* footer */
+.phno {
+    color: #000;
+    text-decoration: underline!important;
+}
+footer {
+    background: rgba(0, 0, 0);
 }
