@@ -1,7 +1,7 @@
 //preloader
 var loader = document.getElementById("preloader");
 setTimeout(function() {
-    loader.style.display = "none";
+    loader.style.opacity = "0";
 }, 1000)
 
 //navbar phone version and hamburger menu
