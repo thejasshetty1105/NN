@@ -1,3 +1,9 @@
+//preloader
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function() {
+    loader.style.display = "none";
+})
+
 //navbar phone version and hamburger menu
 function nav() {
     var span = document.querySelector(".nav-span");
@@ -12,6 +18,7 @@ function nav() {
         document.querySelector("body").style.overflow = "hidden";
     }
 }
+
 //navbar color change on scroll
 window.addEventListener("scroll",function() {
     var nav = document.querySelector(".navbar");
