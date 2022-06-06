@@ -8,7 +8,9 @@
     color: rgb(236,183,49);
 }
 body{
-    background: url(/Assets/mbg.jpg) no-repeat;
+    margin: auto;
+    background-image: url(/Assets/mbg.jpg);
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -36,8 +38,13 @@ h3 {
     z-index: 1000;
     height: 100vh;
     width: 100vw;
-    background: #000 url(/Assets/preload.gif) no-repeat center center;
-    background-size: 20%;
+    background: #fff url(/Assets/loader.gif) no-repeat center center;
+    background-size: 100%;
+}
+@media screen and (min-width: 768px) {
+    #preloader {
+        background-size: 30%;
+    }
 }
 /* Navbar Section */
 .navbar {
@@ -341,7 +348,7 @@ h3 {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.9);
     width: 100%;
     height: 100%;
     opacity: 1;
