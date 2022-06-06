@@ -2,6 +2,7 @@
 var loader = document.getElementById("preloader");
 setTimeout(function() {
     loader.style.opacity = "0";
+    loader.style.zIndex = "-1";
 }, 1000)
 
 //navbar phone version and hamburger menu
