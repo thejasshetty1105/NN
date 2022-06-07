@@ -51,7 +51,7 @@ h3 {
 }
 /* Navbar Section */
 .navbar {
-    background-color: #fff;
+    background-color: #000;
     position: fixed;
     display: grid;
     width: 100%;
@@ -69,12 +69,12 @@ h3 {
     align-items: center;
 }
 .scroll {
-    position: fixed;
-    width: 100%;
     border-radius: 0;
-    background-color: #000;
-    box-shadow: none;
-    transition: 300ms ease;
+    /* position: fixed; */
+    /* width: 100%; */
+    /* background-color: #000; */
+    /* box-shadow: none; */
+    /* transition: 300ms ease; */
 }
 .nav-logo {
     cursor: pointer;
@@ -164,12 +164,12 @@ h3 {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0);
     transition: all 700ms ease-in-out;
     overflow: hidden;
 }
 .nav-phone a {
-    color: #fff;
+    color: rgb(236,183,49);
     font-size: 2rem;
     margin: 1rem 0;
     text-decoration: none;
@@ -262,19 +262,22 @@ h3 {
     /* height: 30vh; */
 }
 .serv-box img {
-    width: 80%;
+    width: 65%;
     border-radius: 50%;
     padding: .2rem;
     border: solid .1rem rgb(0,0,0,.8);
 }
 @media screen and (min-width: 768px) {
     .services {
-        height: 100%;
+        /* height: 100%; */
         width: 85vw;
         margin: auto;
     }
     .serv {
         flex-direction: row;
+    }
+    .serv-box img {
+        width: 80%;
     }
 }
 /* Footer */
