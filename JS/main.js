@@ -5,6 +5,12 @@ setTimeout(function() {
     loader.style.zIndex = "-1";
 }, 1000)
 
+var land = document.querySelector(".landing");
+
+setTimeout(function() {
+    land.classList.add("active");
+}, 1500);
+
 //navbar phone version and hamburger menu
 function nav() {
     var span = document.querySelector(".nav-span");
