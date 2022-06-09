@@ -511,6 +511,7 @@ ul{
 .cont-det {
     order: 1;
     font-size: 1.3rem;
+    padding: 0 1rem;
 }
 .cont-det p {
     padding: 1rem 0;
@@ -563,6 +564,7 @@ ul{
     opacity: 0;
     position: relative;
     padding: 1rem;
+    height: 100vh;
 }
 .active {
     transition: 1s ease;
@@ -668,7 +670,7 @@ ul{
         justify-content: center;
     }
     .address a, .link a, .email a {
-        font-size: .7em;
+        font-size: 1em;
     }
     .foot > div {
         width: 100%;
@@ -699,7 +701,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
     .foot p, .phno {
-        font-size: .7em;
+        font-size: 1em;
     }
     footer {
         border-top: solid 1px;

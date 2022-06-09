@@ -31,9 +31,7 @@ function nav() {
 //navbar color change on scroll
 window.addEventListener("scroll",function() {
     var nav = document.querySelector(".navbar");
-    // var span = document.querySelector(".nav-span");
     nav.classList.toggle("scroll", window.scrollY>0);
-    // span.classList.toggle("nav-scroll", window.scrollY>0);
 })
 
 //slider js
