@@ -4,7 +4,7 @@
     /* font-family: 'Times New Roman', Times, serif; */
     /* font-family: 'Lateef', cursive; */
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     color: rgb(236,183,49);
 }
 body{
@@ -359,29 +359,37 @@ h3 {
     display: grid;
     grid-template-columns: 1fr;
 }
-.mis-text {
+.vis-text, .mis-text {
+    padding: 1rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.vis-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.vis-text p , .mis-text p {
+    font-size: 1rem;
 }
 .mis-text > h1 ,.vis-text > h1 {
     font-size: 2.5rem;
 }
 .misvis-img > img {
-    width: 100%;
-    height: 100%;
+    border: double 5px rgb(236,183,49);
+    /* padding: .2rem; */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 80%;
     object-fit: cover;
+    /* border-radius: 5%; */
 }
 @media screen and (min-width: 768px) {
+    .vis-text p, .mis-text p {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
     .misvis-container {
         grid-template-columns: 1fr 1fr;
     }
@@ -407,7 +415,6 @@ h3 {
     padding: 1rem;
 }
 .slider h1 {
-    font-size: 4rem;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -503,11 +510,18 @@ ul{
 }
 .cont-det {
     order: 1;
+    font-size: 1.3rem;
+}
+.cont-det p {
+    padding: 1rem 0;
 }
 .grid {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr;
+}
+.grid p, .cont-form-input p {
+    font-size: 1.15rem;
 }
 .py-1 {
     padding: .4rem;
@@ -517,9 +531,11 @@ ul{
 }
 .form-input > input {
     width: 100%;
+    height: 1.5rem;
 }
 .cont-form-input > input {
     width: 100%;
+    height: 1.5rem;
 }
 .cont-form-input > textarea {
     width: 100%;
@@ -527,7 +543,7 @@ ul{
 }
 .cont-form-input > button {
     border-radius: 10px;
-    background: rgba(180, 126, 126, 0.9);
+    background: #000;
     font-size: 1.4rem;
     width: 10rem;
 }
@@ -547,11 +563,10 @@ ul{
     opacity: 0;
     position: relative;
     padding: 1rem;
-    height: 100vh;
 }
 .active {
     transition: 1s ease;
-    opacity: 1;
+    opacity: 1!important;
 }
 .land-img {
     position: relative;
@@ -562,7 +577,7 @@ ul{
 .landing-text {
     width: 95%;
     /* margin: 0 1rem; */
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -576,7 +591,8 @@ ul{
     font-weight: 600; 
 }
 .landing-text > h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    text-align: center;
 }
 .txt-cent {
     text-align: center;
@@ -600,6 +616,11 @@ ul{
     .text-cent {
         font-size: 1.7rem;
     }
+}
+/* clientele */
+.client {
+    text-align: center;
+    padding: 1rem 0;
 }
 /* Footer */
 .footer {
@@ -691,5 +712,47 @@ footer {
 @media screen and (min-width: 768px) {
     .copyright p {
         font-size: .7em;
+    }
+}
+
+/* Contact page */
+.contact {
+    position: relative;
+    top: 10%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 100vh;
+}
+#cont p, #cont h1 {
+    text-align: start!important;
+}
+.contact-pg, .map {
+    flex: 1;
+}
+.map {
+    opacity: 0;
+}
+.map iframe {
+    border: 0;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media screen and (max-width: 768px) {
+    .map iframe {
+        height: 100%;
+    }
+    .contact {
+        display: block;
+    }
+    .contact-pg {
+        flex: none;
+        height: 30vh;
+    }
+    .map {
+        height: 40vh;
     }
 }

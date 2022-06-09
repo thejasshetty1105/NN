@@ -6,9 +6,11 @@ setTimeout(function() {
 }, 1000)
 
 var land = document.querySelector(".landing");
+var map = document.querySelector(".map");
 
 setTimeout(function() {
     land.classList.add("active");
+    map.classList.add("active");
 }, 1500);
 
 //navbar phone version and hamburger menu
