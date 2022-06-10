@@ -520,6 +520,8 @@ ul{
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr;
+    position: relative;
+    z-index: 10;
 }
 .grid p, .cont-form-input p {
     font-size: 1.15rem;
