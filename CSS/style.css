@@ -9,12 +9,13 @@
 }
 body{
     margin: auto;
+    width: 100vw;
+    height: 100vh;
     background: linear-gradient(0deg, rgba(0 0 0 / 54%), rgba(0 0 0 / 70%)) , url(/Assets/mbg.jpg);
     background-color: rgba(0, 0, 0, 0.85);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
 }
 a {
     text-decoration: none;
@@ -57,7 +58,7 @@ h3 {
     background-color: #000;
     position: fixed;
     display: grid;
-    width: 100%;
+    width: 100vw;
     grid-template-columns: 1.5fr 1fr;
     z-index: 1;
     transition: 300ms ease;
@@ -394,6 +395,8 @@ h3 {
         grid-template-columns: 1fr 1fr;
     }
     .mis-text {
+        width: 80%;
+        margin: auto;
         align-items: center;
         text-align: center;
     }
@@ -405,6 +408,8 @@ h3 {
         width: 100%;
     }
     .vis-text {
+        width: 80%;
+        margin: auto;
         grid-area: 2 / 2 / 2 / 2;
         align-items: center;
         text-align: center;
@@ -760,3 +765,9 @@ footer {
         height: 40vh;
     }
 }
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+  
