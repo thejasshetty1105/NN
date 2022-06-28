@@ -29,10 +29,10 @@ function nav() {
 }
 
 //navbar color change on scroll
-window.addEventListener("scroll",function() {
-    var nav = document.querySelector(".navbar");
-    nav.classList.toggle("scroll", window.scrollY>0);
-})
+// window.addEventListener("scroll",function() {
+//     var nav = document.querySelector(".navbar");
+//     nav.classList.toggle("scroll", window.scrollY>0);
+// })
 
 //slider js
 const buttons = document.querySelectorAll("[data-carousel-button]");
